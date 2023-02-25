@@ -4,33 +4,32 @@ body{
     box-sizing: border-box;
 }
 /* navBar */
-/* nav{
-    background-color: white !important;
-} */
-.logo-top{
+/* .logo-top{
     margin-right: 0;
     margin-left: auto;
 }
 .logo{
     width: 80px;
-}
+} */
 /* Styles Jumbotron section */
 .background-image{
-    width: 35rem;
+    width: 45rem;
 }
 .jumbotron{
     background-color: #20AB8E;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20rem;
+    
 }
 /* Styles the form */
 .form{
     background-color: white;
     padding: 3rem;
     border-radius: 1rem;
+    margin-right: 20rem;
+    margin-left: auto;
 
 }
 .form-group{
