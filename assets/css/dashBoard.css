@@ -3,32 +3,40 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-/* navBar */
-/* .logo-top{
-    margin-right: 0;
-    margin-left: auto;
-}
 .logo{
     width: 80px;
-} */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px;
+}
 /* Styles Jumbotron section */
+.signIn{
+    background-image:linear-gradient(rgba(43, 227, 187, 0.3),rgba(83, 122, 111, 0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .background-image{
-    width: 45rem;
+    width: 25rem;
 }
 .jumbotron{
-    background-color: #20AB8E;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: #ffffff;
+    height: 90vh;
+    max-width: 80vw;
+    margin: 5rem auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    position: relative;
 }
 /* Styles the form */
 .form{
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     padding: 3rem;
     border-radius: 1rem;
-    margin-right: 20rem;
+    margin-right: 8rem;
     margin-left: auto;
 
 }
@@ -52,13 +60,55 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
-/* Resets Password */
-.password-reset{
+.form-check-label{
+    font-size: small;
+}
+.form-text{
     margin-top: 1rem;
     font-size: smaller;
 }
-.password-reset a{
+.form-text a{
     text-decoration: none;
+}
+/* media query */
+@media (max-width:1200px){
+    .background-image{
+        width: 20rem;
+    }
+    .form{
+        padding: 1.5rem;
+        margin-right: 10%;
+    }
+    .jumbotron{
+        height: 70%;
+    }
+}
+@media (max-width:850px){
+    .background-image{
+        width: 18rem;
+    }
+    .form{
+        padding: 0.8rem;
+    }
+  }
+@media (max-width:700px){
+    .jumbotron{
+        display: block;
+    }
+    .form{
+        margin: 0 10%;
+    }
+    .form-control{
+        width: 90%;
+    }
+    .background-image{
+        width: 70%;
+    }
+}
+@media (max-width:300px){
+    .logo{
+        width: 50px !important;
+    }
 }
 
 
