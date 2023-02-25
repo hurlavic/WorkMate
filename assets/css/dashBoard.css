@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles Jumbotron section */
+.background-image{
+    width: 35rem;
+}
+.jumbotron{
+    background-color: #20AB8E;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20rem;
+}
+.container{
+    align-self: center;
+}
+/* Styles the form */
+.form{
+    align-self: center;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+     margin-top: 1rem;
+}
+.form-check{
+    margin-top: 1rem;
+}
+.form-control{
+    width: 15rem;
+}
+.btn{
+    margin-top: 10px;
+    background-color: rgb(5, 5, 205);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Resets Password */
+.password-reset{
+    margin-top: 1rem;
+    font-size: smaller;
+}
+.password-reset a{
+    text-decoration: none;
+}
+
+
