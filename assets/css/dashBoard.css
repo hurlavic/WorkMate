@@ -1,8 +1,19 @@
 body{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-
+/* navBar */
+/* nav{
+    background-color: white !important;
+} */
+.logo-top{
+    margin-right: 0;
+    margin-left: auto;
+}
+.logo{
+    width: 80px;
+}
 /* Styles Jumbotron section */
 .background-image{
     width: 35rem;
@@ -15,12 +26,8 @@ body{
     align-items: center;
     padding: 0 20rem;
 }
-.container{
-    align-self: center;
-}
 /* Styles the form */
 .form{
-    align-self: center;
     background-color: white;
     padding: 3rem;
     border-radius: 1rem;
@@ -29,7 +36,7 @@ body{
 .form-group{
     display: flex;
     flex-direction: column;
-     margin-top: 1rem;
+    margin-top: 1rem;
 }
 .form-check{
     margin-top: 1rem;
