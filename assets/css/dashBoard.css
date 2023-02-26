@@ -1,26 +1,32 @@
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.logo{
+
+.logo {
     width: 80px;
     position: absolute;
     top: 0;
     left: 0;
     margin: 15px;
 }
+
+
 /* Styles Jumbotron section */
-.signIn{
-    background-image:linear-gradient(rgba(43, 227, 187, 0.3),rgba(83, 122, 111, 0.5));
+
+body {
+    background-image: linear-gradient(rgba(43, 227, 187, 0.3), rgba(83, 122, 111, 0.5));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.background-image{
+
+.background-image {
     width: 25rem;
 }
-.jumbotron{
+
+.jumbotron {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,30 +34,36 @@ body{
     height: 90vh;
     max-width: 80vw;
     margin: 5rem auto;
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     position: relative;
 }
+
+
 /* Styles the form */
-.form{
+
+.form {
     background-color: rgb(240, 240, 240);
     padding: 3rem;
     border-radius: 1rem;
     margin-right: 8rem;
     margin-left: auto;
-
 }
-.form-group{
+
+.form-group {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
 }
-.form-check{
+
+.form-check {
     margin-top: 1rem;
 }
-.form-control{
+
+.form-control {
     width: 15rem;
 }
-.btn{
+
+.btn {
     margin-top: 10px;
     background-color: rgb(5, 5, 205);
     color: white;
@@ -60,55 +72,62 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
-.form-check-label{
+
+.form-check-label {
     font-size: small;
 }
-.form-text{
+
+.form-text {
     margin-top: 1rem;
     font-size: smaller;
 }
-.form-text a{
+
+.form-text a {
     text-decoration: none;
 }
+
+
 /* media query */
-@media (max-width:1200px){
-    .background-image{
+
+@media (max-width:1200px) {
+    .background-image {
         width: 20rem;
     }
-    .form{
+    .form {
         padding: 1.5rem;
         margin-right: 10%;
     }
-    .jumbotron{
+    .jumbotron {
         height: 70%;
     }
 }
-@media (max-width:850px){
-    .background-image{
+
+@media (max-width:850px) {
+    .background-image {
         width: 18rem;
     }
-    .form{
+    .form {
         padding: 0.8rem;
     }
-  }
-@media (max-width:700px){
-    .jumbotron{
+}
+
+@media (max-width:700px) {
+    .jumbotron {
         display: block;
     }
-    .form{
+    .form {
         margin: 0 10%;
     }
-    .form-control{
+    .form-control {
         width: 90%;
     }
-    .background-image{
+    .background-image {
         width: 70%;
     }
 }
-@media (max-width:300px){
-    .logo{
+
+@media (max-width:300px) {
+    .logo {
         width: 50px !important;
     }
 }
-
-
