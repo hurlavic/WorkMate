@@ -30,7 +30,7 @@ body {
 
 .bg-img {
     width: 100%;
-    height: 50%;
+    height: 80%;
 }
 
 .img-container {
@@ -76,4 +76,15 @@ input::placeholder {
     align-items: center;
     margin-top: 1.5rem;
     width: 95%;
+}
+
+.form-cta button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgb(5, 5, 205);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
 }
