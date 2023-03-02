@@ -1,11 +1,5 @@
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .logo {
-    width: 80px;
+    width: 10rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,10 +14,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .background-image {
-    width: 25rem;
+    width: 80%;
+}
+
+.img-container {
+    width: 50%;
 }
 
 .jumbotron {
@@ -31,11 +36,19 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    height: 90vh;
     max-width: 80vw;
-    margin: 5rem auto;
+    margin: 0 auto;
+    padding: 5%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     position: relative;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
 }
 
 
@@ -45,8 +58,10 @@ body {
     background-color: rgb(240, 240, 240);
     padding: 3rem;
     border-radius: 1rem;
-    margin-right: 8rem;
-    margin-left: auto;
+    width: 35%;
+    height: 80%;
+    /* margin-right: 8rem;
+    margin-left: auto; */
 }
 
 .form-group {
@@ -60,7 +75,7 @@ body {
 }
 
 .form-control {
-    width: 15rem;
+    width: 100%;
 }
 
 .btn {
@@ -123,6 +138,10 @@ body {
     }
     .background-image {
         width: 70%;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
     }
 }
 
