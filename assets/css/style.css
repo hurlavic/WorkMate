@@ -1,5 +1,5 @@
 .logo {
-    width: 10rem;
+    width: 15%;
     position: absolute;
     top: 0;
     left: 0;
@@ -29,6 +29,7 @@ body {
 
 .img-container {
     width: 50%;
+    margin-right: 3%;
 }
 
 .jumbotron {
@@ -45,7 +46,8 @@ body {
 
 .main-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     width: 70vw;
     margin: 0 auto;
     align-items: center;
@@ -63,23 +65,21 @@ body {
     background-color: rgb(240, 240, 240);
     padding: 3rem;
     border-radius: 1rem;
-    width: 40%;
+    width: 35%;
     height: 80%;
-    /* margin-right: 8rem;
-    margin-left: auto; */
 }
 
-.form-group {
+/* .form-group {
     display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
-}
+} */
 
-.form-control {
+/* .form-control {
     width: 100%;
-}
+} */
 
-.btn {
+/* .btn {
     margin-top: 10px;
     background-color: rgb(5, 5, 205);
     color: white;
@@ -87,14 +87,15 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-}
+} */
 
 .form-text {
     margin-top: 1rem;
-    font-size: 0.9rem;
-    align-items: center;
+    font-size: 0.8rem;
+    font-style: italic;
+    /* align-items: center;
     justify-content: center;
-    display: flex;
+    display: flex; */
 }
 
 .form-text a {
@@ -102,17 +103,17 @@ body {
 }
 
 input::placeholder {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-style: italic;
 }
 
-.form-cta {
+/* .form-cta {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
     width: 95%;
-}
+} */
 
 .form-cta button {
     padding: 0.5rem 1.5rem;
@@ -124,44 +125,49 @@ input::placeholder {
     font-weight: 600;
     cursor: pointer;
 }
-
+.form-group label {
+    font-size: 0.8rem;
+}
 
 /* media query */
 
-@media (max-width:1200px) {
+/* @media (max-width:1024px) {
     .background-image {
         width: 20rem;
-    }
-    .form {
+    } */
+    /* .form {
         padding: 1.5rem;
-        margin-right: 10%;
     }
     .jumbotron {
         height: 70%;
     }
-}
+} */
 
-@media (max-width:850px) {
-    .background-image {
+@media (max-width:950px) {
+    /* .background-image {
         width: 18rem;
     }
     .form {
         padding: 0.8rem;
+    } */
+    .form-cta button {
+        font-size: 0.7rem;
     }
 }
 
-@media (max-width:700px) {
-    .jumbotron {
+@media (max-width:750px) {
+    /* .jumbotron {
         display: block;
-    }
+    } */
     .form {
-        margin: 0 10%;
-    }
-    .form-control {
         width: 90%;
+        margin: 15% 6%;
     }
+    /* .form-control {
+        width: 90%;
+    } */
     .background-image {
-        width: 70%;
+       display: none;
     }
     .main-container {
         display: flex;
@@ -170,7 +176,7 @@ input::placeholder {
 }
 
 @media (max-width:300px) {
-    .logo {
+    /* .logo {
         width: 50px !important;
-    }
+    } */
 }
