@@ -6,7 +6,6 @@
     margin: 15px;
 }
 
-
 /* Styles Jumbotron section */
 
 body {
@@ -53,49 +52,24 @@ body {
     align-items: center;
 }
 
+/* Styles the form */
 .form-group label {
     font-weight: 600;
     font-size: 1.1rem;
 }
 
-
-/* Styles the form */
-
 .form {
     background-color: rgb(240, 240, 240);
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 1rem;
     width: 35%;
     height: 80%;
 }
 
-/* .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
-} */
-
-/* .form-control {
-    width: 100%;
-} */
-
-/* .btn {
-    margin-top: 10px;
-    background-color: rgb(5, 5, 205);
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-} */
-
 .form-text {
     margin-top: 1rem;
     font-size: 0.8rem;
     font-style: italic;
-    /* align-items: center;
-    justify-content: center;
-    display: flex; */
 }
 
 .form-text a {
@@ -106,14 +80,6 @@ input::placeholder {
     font-size: 0.7rem;
     font-style: italic;
 }
-
-/* .form-cta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-    width: 95%;
-} */
 
 .form-cta button {
     padding: 0.5rem 1.5rem;
@@ -131,41 +97,22 @@ input::placeholder {
 
 /* media query */
 
-/* @media (max-width:1024px) {
-    .background-image {
-        width: 20rem;
-    } */
-    /* .form {
-        padding: 1.5rem;
-    }
-    .jumbotron {
-        height: 70%;
-    }
-} */
-
 @media (max-width:950px) {
-    /* .background-image {
-        width: 18rem;
-    }
     .form {
         padding: 0.8rem;
-    } */
+        width: 40%;
+    }
     .form-cta button {
         font-size: 0.7rem;
     }
 }
 
 @media (max-width:750px) {
-    /* .jumbotron {
-        display: block;
-    } */
     .form {
         width: 90%;
         margin: 15% 6%;
     }
-    /* .form-control {
-        width: 90%;
-    } */
+
     .background-image {
        display: none;
     }
@@ -173,10 +120,4 @@ input::placeholder {
         display: flex;
         flex-direction: column;
     }
-}
-
-@media (max-width:300px) {
-    /* .logo {
-        width: 50px !important;
-    } */
 }
