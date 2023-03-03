@@ -1,68 +1,104 @@
+.logo {
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px;
+}
+
+
+/* Styles Jumbotron section */
+
 body {
     background-image: linear-gradient(rgba(43, 227, 187, 0.3), rgba(83, 122, 111, 0.5));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.container {
-    width: 80vw;
-    margin: 0 auto;
-    background: #fff;
-}
-
-.logo {
-    width: 10rem;
-    margin: 20px 50px;
-}
-
-.main-section {
-    width: 70vw;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 50px;
-    margin: 0 auto;
-}
-
-.bg-img {
-    width: 100%;
-    height: 80%;
+.background-image {
+    width: 80%;
 }
 
 .img-container {
-    width: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
 }
 
-.form-container {
-    width: 40%;
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 5%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    position: relative;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
+/* Styles the form */
+
+.form {
     background-color: rgb(240, 240, 240);
     padding: 3rem;
+    border-radius: 1rem;
+    width: 40%;
+    height: 80%;
+    /* margin-right: 8rem;
+    margin-left: auto; */
 }
 
-.form-input {
+.form-group {
     display: flex;
     flex-direction: column;
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
 }
 
-.form-input label {
-    font-size: 1.2rem;
-    font-weight: 600;
+.form-control {
+    width: 100%;
 }
 
-input {
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 0.3rem;
-    margin-top: 0.5rem;
-    width: 90%;
+.btn {
+    margin-top: 10px;
+    background-color: rgb(5, 5, 205);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.form-text a {
+    text-decoration: none;
 }
 
 input::placeholder {
@@ -79,12 +115,62 @@ input::placeholder {
 }
 
 .form-cta button {
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 0.3rem;
     background-color: rgb(5, 5, 205);
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+
+/* media query */
+
+@media (max-width:1200px) {
+    .background-image {
+        width: 20rem;
+    }
+    .form {
+        padding: 1.5rem;
+        margin-right: 10%;
+    }
+    .jumbotron {
+        height: 70%;
+    }
+}
+
+@media (max-width:850px) {
+    .background-image {
+        width: 18rem;
+    }
+    .form {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width:700px) {
+    .jumbotron {
+        display: block;
+    }
+    .form {
+        margin: 0 10%;
+    }
+    .form-control {
+        width: 90%;
+    }
+    .background-image {
+        width: 70%;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:300px) {
+    .logo {
+        width: 50px !important;
+    }
 }
