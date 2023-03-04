@@ -94,6 +94,11 @@ input::placeholder {
 .form-group label {
     font-size: 0.8rem;
 }
+/* styles error message */
+#error{
+    font-size: 12px;
+    color: red;
+}
 
 /* media query */
 
