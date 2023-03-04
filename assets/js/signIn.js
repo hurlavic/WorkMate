@@ -26,11 +26,16 @@ form.addEventListener('submit', async function(e) {
     email: emailInput.value, 
     password: passwordInput.value
 })
-if (data){
-    console.log (data);
+if (!error){
+    alert('Login successful, you will be re-directed shortly!');
+    setTimeout(()=>{
+        window.location.href = "/dashBoard.html"
+    }, 2000)
+    return;
 }
-if (error){
-    console.log(error);
+else {
+    errorDiv.textContent = error.message;
+    timeOut();
 }
 }
 })

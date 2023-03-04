@@ -40,8 +40,9 @@ form.addEventListener('submit', async function(e) {
             password: passwordInput.value
         })
         if (error) {
-            console.log(error)
-            return
+            errorDiv.textContent = error.message;
+            timeOut();
+            return;
         }
         const id = data.user.id
         let { data: user, error: usererror } = await supabase
@@ -50,9 +51,14 @@ form.addEventListener('submit', async function(e) {
                 { user_id: id, fullname: fullName.value, email: emailInput.value }
             ])
         if (data) {
-            console.log(user)
+            alert('Account successful created, please sign in now');
+            setTimeout(()=>{
+                window.location.href = "/signIn.html"
+            }, 2000)
         } else {
-            console.log(usererror)
+            errorDiv.textContent = usererror.message;
+            timeOut();
+            return;
         }
 
     }
