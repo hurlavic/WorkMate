@@ -53,7 +53,7 @@ form.addEventListener('submit', async function(e) {
         if (data) {
             alert('Account successful created, please sign in now');
             setTimeout(()=>{
-                window.location.href = "/signIn.html"
+                window.location.href = "/assets/html/signIn.html"
             }, 2000)
         } else {
             errorDiv.textContent = usererror.message;

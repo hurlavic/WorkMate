@@ -29,7 +29,7 @@ form.addEventListener('submit', async function(e) {
 if (!error){
     alert('Login successful, you will be re-directed shortly!');
     setTimeout(()=>{
-        window.location.href = "/dashBoard.html"
+        window.location.href = "/assets/html/dashBoard.html"
     }, 2000)
     return;
 }
