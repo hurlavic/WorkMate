@@ -17,7 +17,7 @@ form.addEventListener('submit', function(e){
         return;
     }
     if (!emailValidity.test(emailInput.value)){
-        errorDiv.textContent = 'invalid email address';
+        errorDiv.textContent = 'Invalid email address';
         timeOut();
         return; 
     }
@@ -31,8 +31,6 @@ form.addEventListener('submit', function(e){
         timeOut();
         return;
     }
-
-    form.submit();
 })
 
 function timeOut(){
