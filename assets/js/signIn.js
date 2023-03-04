@@ -19,6 +19,20 @@ form.addEventListener('submit', async function(e) {
         timeOut();
         return;
     }
+ 
+  if(emailInput.value && passwordInput){
+    let { data, error } = await
+    supabase. auth. signInWithPassword ({
+    email: emailInput.value, 
+    password: passwordInput.value
+})
+if (data){
+    console.log (data);
+}
+if (error){
+    console.log(error);
+}
+}
 })
 
 function timeOut() {

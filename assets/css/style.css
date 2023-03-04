@@ -45,7 +45,6 @@ body {
 
 .main-container {
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     width: 70vw;
     margin: 0 auto;
